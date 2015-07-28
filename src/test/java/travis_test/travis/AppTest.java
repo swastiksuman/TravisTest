@@ -2,6 +2,7 @@ package travis_test.travis;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -21,7 +22,7 @@ public class AppTest{
 	
 	@Test
 	public void test(){
-		driver=new FirefoxDriver();
+		driver=new HtmlUnitDriver();
 		driver.get("http://www.google.com/");
 		System.out.println("Google Opened");
 	
